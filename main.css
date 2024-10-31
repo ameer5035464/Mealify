@@ -1,0 +1,859 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-padding-top: 120px;
+    scroll-behavior: smooth;
+    
+}
+
+.container {
+    width: 85%;
+    height: 90px;
+    margin: auto;
+   }
+
+::selection {
+    background: #D85454;
+  }
+
+   /* Start NavBar section */
+
+#navbar {
+
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+.nav-flex {
+
+    display: flex;
+    padding-top: 20px;
+    justify-content:space-between;
+    align-items: center;
+
+}   
+
+#navbar .nav-flex .logo {
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+
+}
+
+#navbar .nav-flex .logo span {
+
+color: #CE1212;
+
+}
+
+#navbar .nav-flex .nav-items ul {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar .nav-flex .nav-items ul li a {
+
+    color: #86868E;
+
+    transition:  250ms ease-in-out;
+}
+
+
+#navbar .nav-flex .nav-items ul li .auto-colored {
+
+    color: #000000;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #CE1212 ;
+
+}
+
+#navbar .nav-flex .mode-icon a{
+    color: #1E3050;
+    font-size: 25px;
+
+}
+
+   /* End NavBar section */
+/* ========================= */ 
+   /* Start Home section */
+
+#home{
+    background-color: #EEEEEE;
+    height: 100vh;
+}
+
+#home .home-flex  {
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#home .home-flex .home-info {
+
+    width: 50%;
+    padding-top: 100px;
+    padding-right: 100px;
+    
+
+} 
+
+#home .home-flex .home-info h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+#home .home-flex .home-info p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #52525D;
+}
+
+#home .home-flex .home-info .button-icon {
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+#home .home-flex .home-info .button-icon .Home-icon {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding-left: 200;
+    margin-left: 40px;
+}
+
+#home .home-flex .home-info .button-icon .home-button {
+    position: relative;
+}
+#home .home-flex .home-info .button-icon .home-button button {
+
+    position: absolute; 
+    top: 0%; 
+    left:0%; 
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    height: 50px; 
+    width: 150px; 
+    border: none;
+    border-radius: 0 150px 150px 150px ; 
+    background-color: #CE1212;
+    cursor: pointer;
+    transition: all .5s; 
+
+}
+
+#home .home-flex .home-info .button-icon .Home-icon a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color:#000000;
+    transition: all .5s;
+}
+
+#home .home-flex .home-info .button-icon .Home-icon a .play-icon{
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50;
+  height: 50;
+  text-align: center;
+  margin-right: 15px;
+  border-radius: 50%;
+  z-index: 2;
+  background-color: white;
+}
+
+#home .home-flex .home-info .button-icon .Home-icon a .layer {
+
+    width: 65px;
+    height: 32.5px; 
+    transform: rotate(-90deg);
+    border-top-left-radius: 110px;  
+    border-top-right-radius: 110px; 
+    border: 10px solid #CE1111;
+    border-bottom: 0;
+    z-index: 1;
+    position: absolute;
+    top: 8.5;
+    left: -25;
+}
+
+#home .home-flex .home-info .button-icon .Home-icon a span{
+
+    padding-left: 50px;
+}
+
+#home .home-flex .home-photo {
+
+    width: 50%;
+    padding-top: 170px;
+    padding-left: 150px;
+}
+
+#home .home-flex .home-photo img{
+
+    width: 500px;
+    filter: drop-shadow(2px 2px 10px black);
+
+}
+
+/* End Home section */
+/* ============================= */
+/* Start Chefs section */
+
+#chefs {
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+#chefs .chefs-info {
+    text-align: center;
+    margin-block:80px 50px;
+}
+
+#chefs .chefs-info h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #7F7F90;
+}
+
+#chefs .chefs-info p {
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #212529;
+}
+
+#chefs .chefs-info p .diff {
+    color: #CE1212;
+}
+
+#chefs .chefs-members {
+    display: flex;
+    justify-content: space-between;
+}
+
+#chefs .chefs-members .member {
+    width: 31.5%;
+    overflow: hidden;
+    position: relative;
+    transition: all .5s;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#chefs .chefs-members .member .img img {
+    width: 100%;
+}
+
+#chefs .chefs-members .member .info {
+    width: 100%;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+#chefs .chefs-members .member .info h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18.72px;
+    font-weight: 700;
+} 
+
+#chefs .chefs-members .member .info h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #7F7F90;
+    padding-block: 10px;
+} 
+
+#chefs .chefs-members .member .info p {
+    padding-inline:50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    color: #7F7F90;
+    padding-bottom: 30px;
+}
+
+#chefs .chefs-members .member .chef-layer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    background-color: #e7e0da79;
+    border-radius: 5px;
+    position: absolute;
+    top: 45px;
+    right: -50px;
+    transition: all .5s .19s;
+}
+
+#chefs .chefs-members .member .chef-layer a i{
+    padding-block: 15px;
+    font-size: 18px;
+    color: #948E8D;
+    transition: all .5s;
+}
+
+/* End Chefs section */
+/* ============================= */
+/* Start Gallary section */
+
+#gallery {
+    background-color: #EEEEEE;
+    height: 185vh;
+}
+
+#gallery .gallery-info {
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom:50px;
+}
+
+#gallery .gallery-info h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #7F7F90;
+}
+
+#gallery .gallery-info p {
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #212529;
+}
+
+#gallery .gallery-info p .diff {
+    color: #CE1212;
+}
+
+.gallery-collection {
+    columns:3;
+}
+
+.gallery-collection .layer img {
+    width:100%;
+    transition: all .4s;
+}
+
+.gallery-collection .layer {
+    position: relative;
+    overflow: hidden;
+    background-color: #CE1111;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom:20px;
+    border: 5px solid white;
+}
+
+.gal-layer {
+    background-color: #212529b5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all .5s;
+}
+
+.gal-layer h3 {
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 10px;
+}
+
+.gal-layer p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding-inline: 10px;
+    line-height: 22px;
+}
+
+/* End Gallery section */
+
+
+/* Start Contact section */
+
+#contact {
+    background-color: #FFFFFF;
+    height: 170vh;
+}
+
+#contact .contact-info {
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom:30px;
+}
+
+#contact .contact-info h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #7F7F90;
+}
+
+#contact .contact-info p {
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #212529;
+}
+
+#contact .contact-info p .diff {
+    color: #CE1212;
+}
+
+#contact .map iframe{
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+
+#contact .contact-data {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contact .member {
+    width: 49%;
+    height: 100px;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    margin-block: 10px;
+}
+
+#contact .member .icon {
+    padding: 20px;
+    margin: 10px;
+    background-color: #CE1212;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+#contact .member .icon i{
+    font-size: 20px;
+}
+
+#contact .member .info h3 {
+    font-family: 'Inter', sans-serif;
+    color: #7D7D7D;
+} 
+
+#contact .member .info p {
+    padding-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: #212529;
+} 
+
+#contact .member .info p span{
+    font-family: 'Open Sans', sans-serif;
+    color: #212529;
+    font-weight: bold;
+} 
+
+#contact .form-input {
+    background-color: #FFFFFF;
+    display: flex;
+    margin-top: 20px;
+    justify-content:space-around;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 10px;
+}
+
+#contact .form-input form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 98%;
+    margin: 20px;
+}
+
+#contact .form-input form input {
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    border: 2px solid #E8E3E3;
+    outline: none;
+    transition: all .5s ;
+    
+}
+
+#contact .form-input form .subject , #contact .form-input form textarea{
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    width: 99%;
+    border: 2px solid #E8E3E3;
+    outline: none;
+    resize: vertical;
+    transition: 0.3s ease;
+}
+
+
+#contact .form-input form .mail{
+    width: 49%;
+}
+
+#contact .form-input form button {
+    font-family: 'Open Sans', sans-serif;
+    margin-block: 30px 0px;
+    padding: 15px 40px; 
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #CE1212;
+    transition: all .5s;
+}
+
+/* End Contact section */
+
+
+/* Start Footer section */
+
+#footer {
+    
+    background-color: #020202;
+    height: 48vh;
+}
+
+#footer .content {
+    width: 100%;
+    display: flex;
+}
+
+#footer .social {
+    width: 25%;
+}
+
+#footer .social .logo {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-top: 40px;
+}
+
+#footer .social .logo h2 {
+    margin-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+#footer .social .logo img {
+    width: 40px;
+} 
+
+#footer .social .logo h2 span {
+    color: #CE1212;
+}
+
+#footer .social .text {
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+#footer .social .title {
+    width: 100%;
+    margin-block: 10px 20px;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    border-bottom: 2px solid #595959;
+    color: #FFFFFF;
+}
+
+#footer .social .icons {
+    width: 100%;
+}
+
+#footer .social .icons ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .social .icons ul li a i{
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+
+
+
+#footer .Subscribe {
+    width: 50%;
+    margin-left: 10px;
+}
+
+#footer .Subscribe .title {
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    padding-top: 40px;
+}
+
+#footer .Subscribe .text {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    margin-block: 15px;
+}
+
+#footer .Subscribe .email-input form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-block: 15px;
+}
+
+#footer .Subscribe .email-input form input {
+    width: 80%;
+    height: 35px;
+    padding: 20px 20px 20px 10px;
+    outline: none;
+}
+
+#footer .Subscribe .email-input form button {
+    width: 19%;
+    background-color: #CE1212;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#footer .Subscribe .head {
+    margin-block: 20px 5px;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+}
+
+#footer .Subscribe .links {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+#footer .Subscribe .links ul {
+    width: 50%;
+}
+
+#footer .Subscribe .links ul li{
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#footer .Subscribe .links ul li i {
+    padding-right: 3px;
+}
+
+
+
+#footer .Contact {
+    width:24%;
+}
+
+#footer .Contact .head {
+    font-family: 'Inter', sans-serif;
+    padding-top: 40px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+#footer .Contact .contact-info {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#footer .Contact .contact-info ul li {
+
+    padding-top: 15px;
+}
+
+#footer .Contact .contact-info .icons {
+    font-size: 22px;
+    color: #CE1212;
+    margin-left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+} 
+
+#footer .Contact .contact-info .info {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 15px;
+}
+
+/* End Footer section */
+
+/* ============================= */
+
+/* Start actions section */
+
+    /* start navbar actions */
+
+   #navbar .nav-flex .nav-items ul li a:hover {
+    color: #000000;
+   }
+
+   #navbar .nav-flex .nav-items ul li a:after{  
+    display:block;
+    content: '';
+    border-bottom: solid 2px #CE1212;  
+    padding-bottom: 5px;
+    transform: scaleX(0);  
+    transition: all 0.25s;
+    
+}
+
+#navbar .nav-flex .nav-items ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+#navbar .nav-flex .nav-items ul li a::after {
+    transform-origin:  0% 100%; 
+}
+
+    /* end navbar actions */
+
+
+    /* Start Home actions */
+
+#home .home-flex .home-info .Home-icon a:hover {
+
+    color: #CE1212;
+
+}
+
+#home .home-flex .home-info .button-icon .home-button button:hover {
+
+    background-color: #E61414;
+}
+
+#home .home-flex .home-photo img:hover {
+
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+    /* end Home actions */
+
+
+    /* Start Chef actions */
+
+#chefs .chefs-members .member:hover{
+    transform: scale(1.06);
+} 
+
+#chefs .chefs-members .member:hover .chef-layer {
+    top: 45px;
+    right: 15px;
+}
+
+#chefs .chefs-members .member .chef-layer a i:hover {
+    color: #47464C;
+}
+
+    /* end Chef actions */
+
+
+    /* Start Gallery actions */
+
+.gallery-collection .layer:hover .gal-layer {
+    top: 0;
+}
+   
+.gallery-collection .layer:hover img{
+   transform:scale(1.1);
+}
+
+    /* End Gallery actions */
+
+
+    /* Start Contact actions */
+
+    #contact .form-input form input:focus {
+    border: 2px solid  #CE1212;
+}    
+
+#contact .form-input form textarea:focus {
+    border: 2px solid  #CE1212;
+}   
+
+#contact .form-input form button:hover {
+    background-color: #E61414;
+}
+    /* End  Contact actions */
+
+     /* Start Footer actions */
+
+#footer .Subscribe .email-input form button:hover {
+    background-color: #E61414;
+}    
+
+.Subscribe .links ul li:hover {
+    background-color: #222222;
+    margin-left: 15px;
+}
+
+     /* End  Footer actions */
+
+/* End Hover actions */
+
+
+   
+
+
+
